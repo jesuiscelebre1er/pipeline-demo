@@ -5,8 +5,14 @@ pipeline {
         stage('clone'{
             steps {
                 sh 'git clone https://github.com/jesuiscelebre1er/pipeline-demo.git'
-                sh 'mkdir /var/jenkins_home/workspace/dir_from_github'
             }
+            
+             steps {
+                sh 'sh 'mkdir /var/jenkins_home/workspace/dir_from_github'
+            }
+            
+                            
+
            
         }
 
