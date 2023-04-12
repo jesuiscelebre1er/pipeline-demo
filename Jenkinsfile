@@ -6,10 +6,13 @@ pipeline {
             steps {
                 sh 'git clone https://github.com/jesuiscelebre1er/pipeline-demo.git'
             }
-            
-             steps {
-                sh 'mkdir /var/jenkins_home/workspace/dir_from_github'
-            }
+        }
+              
+        stage('copy'{
+                  
+         steps {
+            sh 'mkdir /var/jenkins_home/workspace/dir_from_github'
+           }
             
         }
 
