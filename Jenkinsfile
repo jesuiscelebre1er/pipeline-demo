@@ -2,11 +2,11 @@ pipeline {
     agent any
 
     stages {
-        stage('clone'{
-            steps {
-                sh 'git clone https://github.com/jesuiscelebre1er/pipeline-demo.git'
-            }
-        }
+//         stage('clone'{
+//             steps {
+//                 sh 'git clone https://github.com/jesuiscelebre1er/pipeline-demo.git'
+//             }
+//         }
               
         stage('copy'{
                   
