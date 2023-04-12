@@ -5,7 +5,7 @@ pipeline {
         stage('clone'{
             steps {
                 sh 'git clone https://github.com/jesuiscelebre1er/pipeline-demo.git'
-                sh 'mv pipeline-demo /var/jenkens_home/workspace pipeline-demo /var/jenkens_home/pipeline-test'
+                sh 'mv /var/jenkens_home/workspace pipeline-demo /var/jenkens_home/pipeline-test'
             }
            
         }
