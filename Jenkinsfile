@@ -2,18 +2,24 @@ pipeline {
     agent any
 
     stages {
-
-        stage('Build') {
+        stage('clone'{
             steps {
-                sh './mvnw clean package'
+                sh 'git clone https://github.com/jesuiscelebre1er/pipeline-demo.git'
             }
+           
         }
 
-        stage('Test') {
-            steps {
-                sh './mvnw test'
-            }
-        }
+//         stage('Build') {
+//             steps {
+//                 sh './mvnw clean package'
+//             }
+//         }
+
+//         stage('Test') {
+//             steps {
+//                 sh './mvnw test'
+//             }
+//         }
 
 
     }
